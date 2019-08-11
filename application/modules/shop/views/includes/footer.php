@@ -1,30 +1,8 @@
-	<!-- newsletter -->
-	<div class="footer-top">
-		<div class="container-fluid">
-			<div class="col-xs-8 agile-leftmk">
-				<h2>Get your Groceries delivered from local stores</h2>
-				<p>Free Delivery on your first order!</p>
-				<form action="#" method="post">
-					<input type="email" placeholder="E-mail" name="email" required="">
-					<input type="submit" value="Subscribe">
-				</form>
-				<div class="newsform-w3l">
-					<span class="fa fa-envelope-o" aria-hidden="true"></span>
-				</div>
-			</div>
-			<div class="col-xs-4 w3l-rightmk">
-				<img src="public/shoppping/assets/images/tab3.png" alt=" ">
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<!-- //newsletter -->
-	<!-- footer -->
-	<footer>
+<footer>
 		<div class="container">
 			<!-- footer first section -->
 			<p class="footer-main">
-				<span>"Grocery Shoppy"</span> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+				<span>"VCM SMART SHOP"</span> Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
 				magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem
 				accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
 				beatae vitae dicta sunt explicabo.</p>
@@ -356,8 +334,8 @@
 	<!-- copyright -->
 	<div class="copy-right">
 		<div class="container">
-			<p>© 2017 Grocery Shoppy. All rights reserved | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
+			<p>© 2017 VCM SMART SHOP. All rights reserved | Design by
+				<a href="https://www.codensity.in"> Codensity.</a>
 			</p>
 		</div>
 	</div>
