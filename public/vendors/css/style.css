@@ -2380,12 +2380,19 @@ input.ggg{
     margin: 14px 0px;
 	background: none;
 }
+span.error-input {
+    color: red;
+}
+.invalid-login {
+        color: red;
+        text-align: center;
+        display: block;
+        width: 410px;
+}
 .w3layouts-main span {
     font-size: 16px;
-    color: #fff;
     float: left;
-    width: 32%;
-	margin-top: 8px;
+    margin-top: 8px;
 }
 .w3layouts-main h6 {
     font-size: 16px;
@@ -3143,4 +3150,5 @@ div#graph1, div#graph4, div#graph5, div#graph6, div#graph7, div#graph8, div#grap
 .chart_agile_bottom {
     padding: 0;
 }
+
 }
