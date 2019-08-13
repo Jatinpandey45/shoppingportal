@@ -14,7 +14,7 @@ class Home extends MY_Controller
 		$isUserLoggedIn = $this->session->userdata('USER_LOGIN');
 
 		if(!empty($isUserLoggedIn)) {
-			redirect('vendors/dashboard');
+			redirect('store/dashboard');
 		}
 		
 	}
@@ -61,7 +61,7 @@ class Home extends MY_Controller
 				
 				if(empty($checkUserNamePassword)) {
 					$this->session->set_flashdata('INVALID_LOGIN_ATTEMPT','Your email or password is wrong. Try forgot password to recover your password');
-					redirect('/vendors/home');
+					redirect('store/home');
 				}
 
 				#set user session for login
@@ -70,7 +70,7 @@ class Home extends MY_Controller
 					'userinfo' => $checkUserNamePassword
 				];
 				$this->session->set_userdata('USER_LOGIN',$loginPyload);
-				redirect('vendors/dashboard');
+				redirect('store/dashboard');
 
 			}
 
