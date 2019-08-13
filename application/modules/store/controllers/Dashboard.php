@@ -12,7 +12,7 @@ class Dashboard extends MY_Controller {
 		parent::__construct();
 		$isUserLoggedIn = $this->session->userdata('USER_LOGIN');
 		if(empty($isUserLoggedIn)) {
-			redirect('vendor/home');
+			redirect('store/home');
 		}
 
 		
@@ -34,6 +34,6 @@ class Dashboard extends MY_Controller {
 	 {
 		$this->session->unset_userdata('USER_LOGIN');
 		$this->session->sess_destroy();
-		redirect('vendor/home');
+		redirect('store/home');
 	 }
 }

@@ -32,7 +32,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="w3layouts-main">
 	<h2>Sign In Now</h2>
 		<span class="error-input invalid-login" style="color:red"><?php echo $this->session->userdata('INVALID_LOGIN_ATTEMPT'); ?></span>
-		<form action="<?php echo base_url(); ?>vendor/home/index" method="post">
+		<form action="<?php echo base_url(); ?>store/home/index" method="post">
 			<input type="email" class="ggg" name="email" placeholder="E-MAIL" required="">
 			<span class="error-input" style="color:red"><?php echo form_error('email'); ?></span>
 			<input type="password" class="ggg" name="password" placeholder="PASSWORD" required="">
