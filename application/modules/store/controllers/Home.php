@@ -44,7 +44,16 @@ class Home extends MY_Controller
 					'errors' => array(
 						'required' => 'Please enter your %s.'
 					),
+				),
+				array(
+					'field' => 'type',
+					'label' => 'type',
+					'rules' => 'required',
+					'errors' => array(
+						'required' => 'Please enter your login %s.'
+					),
 				)
+
 			);
 	
 			$this->form_validation->set_rules($config);
@@ -56,8 +65,9 @@ class Home extends MY_Controller
 			
 				$email      = $this->input->post('email');
 				$password   = $this->input->post('password');
+				$type       = $this->input->post('type');
 				
-				$checkUserNamePassword = $this->user_model->getUser($email,hash('sha256',$password)); 
+				$checkUserNamePassword = $this->user_model->getUser($email,hash('sha256',$password),$type); 
 				
 				if(empty($checkUserNamePassword)) {
 					$this->session->set_flashdata('INVALID_LOGIN_ATTEMPT','Your email or password is wrong. Try forgot password to recover your password');

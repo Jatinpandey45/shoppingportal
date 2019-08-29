@@ -15,7 +15,7 @@ class User_model extends CI_Model {
      * @param : password
      */
 
-     public function getUser($userEmail,$password) 
+     public function getUser($userEmail,$password,$type) 
      {  
         
          $this->db->select('auth_user.id,auth_user.email,auth_user.username,
@@ -26,6 +26,8 @@ class User_model extends CI_Model {
                             ->join('vg_user_profile','vg_user_profile.user_id = auth_user.id','INNER')
 
                             ->where('auth_user.email',$userEmail)
+
+                            ->where('company_name',$type)
 
                             ->where('vg_user_profile.password',$password);
 
